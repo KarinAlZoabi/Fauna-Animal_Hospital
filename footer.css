@@ -1,0 +1,132 @@
+/* footer style sheet, media queries can be found at the end of the document */
+footer
+{
+    background-color: rgb(0, 0, 0);
+    padding: 1% 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#copyright
+{
+    font-size: 18px;
+    text-align: right;
+    color: #fff;
+    margin-top: 8px;
+    margin-right: 25px;
+    font-family: Roboto Slab;
+}
+
+/* start of social icons style */
+.social-icons {
+    list-style: none;
+    text-align: right;
+    margin-right: 50px;
+}
+.social-icons li {
+    display: inline-block;
+}
+.social-icons li i {
+    background: none;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 22%;
+    margin-right: 10px;
+    transition: all .5s;
+}
+.social-icons li i:hover {
+    color: rgb(132, 221, 99);
+    transform: translateY(-5px);
+	animation: updown 1s cubic-bezier(.36,.07,.57,.99) infinite;
+}
+
+/* end of social icons style */
+
+/* footer contact info style */
+footer img
+{
+    width: 90px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+#icon-contact
+{
+    display: flex;
+    align-items: center;
+}
+
+#contactFooter
+{
+   margin-left: 10px;
+   font-size: 15px;
+   font-family: Roboto Slab;
+}
+
+#contactFooter p
+{
+    margin-bottom: 5px;
+}
+
+/* media queries */
+@media screen and (max-width: 572px){
+   *{
+    font-size: 10px;
+   }
+   #copyright{
+    font-size: 10px;
+   }
+
+   .social-icons li i {
+    font-size: 15px;
+   }
+
+   .social-icons {
+    margin-right: 30px;
+   }
+
+   footer img{
+    width: 70px;
+   }
+}
+
+
+@media screen and (max-width: 500px)
+{
+    .social-icons li i:hover
+    {
+        transform: none;
+        animation: none;
+    }
+}
+@media screen and (max-width: 400px)
+{
+    .social-icons li i
+    {
+        margin-right: 5px;
+    }
+}
+@media screen and (max-width: 270px)
+{   
+  .social-icons li i {
+  font-size: 10px;
+  margin-right: 2px !important;
+  }
+
+  .social-icons {
+  margin-right: 30px !important;
+  margin-bottom: 0% !important;
+  }
+
+  footer img{
+  width: 40px !important;
+  margin-left: 3px !important;
+  }
+}
+

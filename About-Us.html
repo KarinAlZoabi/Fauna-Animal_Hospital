@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore our About Us page to learn more about the heart of Fauna Animal Hospital. Meet our dedicated team, a group of enthusiastic specialists dedicated to the care of your beloved pets. Learn about our operating hours to ensure your pets' accessibility and convenience. Explore our accomplishments, which demonstrate our dedication to veterinary care quality. Discover our mission: to deliver compassionate, cutting-edge healthcare that promotes the health and happiness of every animal in our care. Welcome to Fauna Animal Hospital, where we treat your dogs like family and put their health first.">
+    <meta name="keywords" content="staff, doctors, vet, mission, achievements, IFSM">
+    <link rel="icon" type="png" href="photos/icon.png">
+    <link rel="stylesheet" href="About-Us.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="subMenu.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Baloo+Bhaina+2:wght@700&family=Roboto+Slab"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Fauna Animal Hospital - About us</title>
+    <script src="header.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="About-Us.js" defer></script>
+</head>
+
+<body>
+    <!--SCROLL INDICATOR-->
+    <div class="indicator-container">
+        <div class="indicator"></div>
+    </div>
+    <header>
+
+        <!--LOGO-->
+        <div id="logo">
+            <a href="index.html"><img src="photos/Logo.png" alt="logo"></a>
+        </div>
+
+        <!-- NAVIGATION BAR-->
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="About-Us.html" id="about-menu">About Us <i class="material-icons"
+                            id="dropdown-icon">&#xe5cf;</i></a>
+                    <ul class="dropdown aboutDropdown">
+                        <li><a href="About-Us.html#s1">Our Mission</a></li>
+                        <li><a href="About-Us.html#s2">Our Staff</a></li>
+                        <li><a href="About-Us.html#s3">Working Hours</a></li>
+                        <li><a href="About-Us.html#s4">Our Achievements</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="services.html">Services</a>
+                </li>
+                <li>
+                    <a href="Pet-gallery.html">Pet Gallery</a>
+                </li>
+                <li>
+                    <a href="Pet-health.html">Pet Health</a>
+                </li>
+                <li>
+                    <a href="contactUs.html" id="contact-menu">Contact Us <i class="material-icons"
+                            id="dropdown-icon">&#xe5cf;</i></a></a>
+                    <ul class="dropdown contactDropdown">
+                        <li><a href="contactUs.html">Make an appointment</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="menu-container">
+
+            <!--HAMBURGER MENU ICON-->
+            <input hidden="" class="check-icon" id="check-icon" name="check-icon" type="checkbox">
+            <label class="icon-menu" for="check-icon">
+                <div class="bar bar--1"></div>
+                <div class="bar bar--2"></div>
+                <div class="bar bar--3"></div>
+            </label>
+
+            <!-- DROPDOWN NAV BAR -->
+            <div id="nav2">
+                <ul id="hamburger-menu">
+                    <li> <a href="index.html">Home</a> </li>
+                    <li>
+                        <a href="About-Us.html" class="main-link-to-page">About Us</a>
+                        <ul class="sub-menu">
+                            <li><a href="About-Us.html#s1">Our Mission</a></li>
+                            <li><a href="About-Us.html#s2">Our Staff</a></li>
+                            <li><a href="About-Us.html#s3">Working Hours</a></li>
+                            <li><a href="About-Us.html#s4">Our Achievements</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="services.html">Services</a> </li>
+                    <li> <a href="Pet-gallery.html">Pet Gallery</a> </li>
+                    <li> <a href="Pet-health.html">Pet Health</a> </li>
+                    <li>
+                        <a href="contactUs.html" class="main-link-to-page">Contact Us</a>
+                        <ul class="sub-menu">
+                            <li><a href="contactUs.html">Make an appointment</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--SEARCH BAR-->
+        <div class="searchBox">
+            <div class="searchToggle">
+                <i class='bx bx-x cancel'></i>
+                <i class='bx bx-search'></i>
+            </div>
+
+            <div class="search-field">
+                <input type="text" placeholder="Search...">
+                <i class='bx bx-search'></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- MISSION SECTION  -->
+        <section id="s1">
+            <div class="mission-section">
+                <div class="mission-content">
+                    <h2 class="hidden">Our Mission<i id="one" class="fa-solid fa-paw" style="color: #000000;"></i></h2>
+                    <p class="hidden">At Fauna Hospital, our mission is to provide dedicated care and rehabilitation to
+                        injured, sick, and orphaned wildlife, ensuring their well-being and eventual return to their
+                        natural habitats. We are committed to the preservation and conservation of our local fauna,
+                        striving to create a harmonious balance between human activity and the environment. With a team
+                        of experienced veterinarians, rehabilitators, and passionate volunteers, we work tirelessly to
+                        mend the wounds of our animal friends, offering them a second chance at life in the wild. Our
+                        mission is not just about healing creatures; it's about fostering a deeper understanding of the
+                        vital role that wildlife plays in our world and inspiring others to join us in safeguarding the
+                        delicate ecosystems that sustain us all.</p>
+                </div>
+                <div class="mission-image">
+                    <img src="photos/image8.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- STAFF SECTION -->
+        <section class="s2" id="s2">
+            <h1 style="font-family: Roboto Slab;">Our Staff</h1>
+            <div class="staff-container">
+                <div class="staff-member">
+                    <img src="photos/image1.jpg" alt="Staff Member">
+                    <p class="hidden">Dr. Lama Doe</p>
+                    <p class="hidden">Veterinarian (General Practice)</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"
+                                style="color: #ffffff;"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="staff-member">
+                    <img src="photos/image2.jpg" alt="Staff Member">
+                    <p class="hidden">Dr. Jane Smith</p>
+                    <p class="hidden">Veterinarian (Specialist)</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"
+                                style="color: #ffffff;"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="staff-member">
+                    <img src="photos/image3.jpg" alt="Staff Member ">
+                    <p class="hidden">Dr. Katrin Johnson</p>
+                    <p class="hidden">Emergency Veterinarian</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"
+                                style="color: #ffffff;"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="staff-member">
+                    <img src="photos/staff9.jpg" alt="Staff Member ">
+                    <p class="hidden">Dr. Sarah Davis</p>
+                    <p class="hidden">Veterinary Nurse</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"
+                                style="color: #ffffff;"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="staff-member">
+                    <img src="photos/staff5.jpg" alt="Staff Member">
+                    <p class="hidden">Dr. Thomas Baker</p>
+                    <p class="hidden">Practice Manager</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"
+                                style="color: #ffffff;"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="staff-member">
+                    <img src="photos/staff6.jpg" alt="Staff Member">
+                    <p class="hidden">Dr. Samuel Wilson</p>
+                    <p class="hidden">Client Care Specialist</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"
+                                style="color: #ffffff;"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="staff-member">
+                    <img src="photos/staff.jpg" alt="Staff Member">
+                    <p class="hidden">Dr. Daniel Taylor </p>
+                    <p class="hidden">Animal Care Attendant</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"
+                                style="color: #ffffff;"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="staff-member">
+                    <img src="photos/staff8.jpg" alt="Staff Member">
+                    <p class="hidden">Dr. Joseph King</p>
+                    <p class="hidden">Animal Behaviorist</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"
+                                style="color: #ffffff;"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- WORKING HOURS SECTION -->
+        <section class="s3" id="s3">
+            <div class="working-hours-section">
+                <h2 style="font-family: Roboto Slab;" class="hidden">Working Hours<i id="two"
+                        class="fa-regular fa-clock" style="color: #000000;"></i></h2>
+                <ul class="working-hours">
+                    <li>
+                        <span class="day">Monday</span>
+                        <span class="hours">9:00 AM - 5:00 PM</span>
+                    </li>
+                    <li>
+                        <span class="day">Tuesday</span>
+                        <span class="hours">9:00 AM - 5:00 PM</span>
+                    </li>
+                    <li>
+                        <span class="day">Wednesday</span>
+                        <span class="hours">9:00 AM - 5:00 PM</span>
+                    </li>
+                    <li>
+                        <span class="day">Thursday</span>
+                        <span class="hours">9:00 AM - 5:00 PM</span>
+                    </li>
+                    <li>
+                        <span class="day">Friday</span>
+                        <span class="hours">9:00 AM - 4:00 PM</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ACHIEVEMENTS SECTION -->
+        <section id="s4">
+            <h1 style="font-family: Roboto Slab;" class="hidden">Achievements</h1>
+            <p id="achievement" class="hidden">Fauna Animal Hospital takes pride in its noteworthy achievements,
+                including a consistently high standard of veterinary care, successful treatment outcomes, and a strong
+                commitment to community education on responsible pet ownership and animal welfare.</p>
+            <div class="pdf-container">
+                <div class="pdf">
+                    <a target="_blank" href="PDFs/pdf1.pdf">
+                        <img src="PDFs/pdfp1.png">
+                    </a>
+                </div>
+
+                <div class="pdf">
+                    <a target="_blank" href="PDFs/OneHealthAsia.pdf">
+                        <img src="PDFs/pdfp2.png">
+                    </a>
+                </div>
+
+                <div class="pdf">
+                    <a target="_blank" href="PDFs/CertificateOfAttendance.pdf">
+                        <img src="PDFs/pdfp3.png">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- SCROLL TO TOP -->
+        <a href="#" class="scrollTop-btn"><i class="material-icons" id="scrollArrow">&#xe5d8;</i> </a>
+    </main>
+
+    <footer>
+
+        <!--FOOTER INFO-->
+        <div id="icon-contact">
+            <div><img src="photos/icon.png" alt="icon"></div>
+            <div id="contactFooter">
+                <p><b>Phone: </b>+ 1235 2355 98</p>
+                <p><b>Email: </b> info@Fauna.com</p>
+            </div>
+        </div>
+
+        <!--SOCIAL ICONS - COPYRIGHT-->
+        <div id="icon-copyright">
+            <ul class="social-icons">
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                </li>
+                <li><a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+            <p id="copyright">&copy; Fauna Animal Hospital</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

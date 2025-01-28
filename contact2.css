@@ -1,0 +1,214 @@
+main
+{
+    padding-top: 190px;
+}
+
+#welcomeMsg
+{
+    text-align: center;
+    font-family: Roboto Slab;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#mapContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+iframe
+{
+    width: 70%;
+    margin-bottom: 50px;
+}
+
+h1{
+    font-family: Roboto Slab;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#info
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.iconCircle
+{
+    background-color: #82C5F9;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#location, #email, #phone, #website
+{
+    display: flex;
+}
+#location p, #email p, #phone p, #website p
+{
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-family: Roboto Slab;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#location p
+{
+    margin-top: 0;
+}
+
+#location
+{
+    margin-right: 300px;
+}
+
+#location, #email
+{
+    margin-bottom: 50px;
+}
+
+main .material-icons
+{
+    color: white;
+    font-size: 40px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#location p:hover, #email p:hover, #phone p:hover, #website p:hover
+{
+    cursor: pointer;
+    color: #84DD63;
+    text-decoration: underline;
+}
+
+#line
+{
+    padding: 0.5px;
+    border-radius: 5px;
+    background-color: rgb(77, 77, 77);
+    margin-bottom: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+main h2
+{
+    font-family: Roboto Slab;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#pageDesc, #fill-form
+{
+    font-family: Roboto Slab;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#fill-form
+{
+    font-family: Average Sans;
+}
+
+#form
+{
+    border: 6px solid #82C5F9;
+    padding: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 11px;
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#form input, #species
+{
+    margin-bottom: 20px;
+    width: 98%;
+    height: 55px;
+    border-radius: 8px;
+    border: 1px solid #B9B9B9;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.subForm
+{
+    display: flex;
+    flex-direction: row;
+}
+
+select
+{
+    font-family: Roboto Slab;
+    font-size: 16px;
+    color: #B9B9B9;
+}
+.subForm input:first-child, #species
+{
+    margin-right: 20px;
+}
+.subForm input, #species{
+    width: 343px !important;
+}
+
+#reason
+{
+    height: 100px !important;
+    margin-top: -10px;
+}
+
+::placeholder
+{
+    color: #B9B9B9;
+    font-family: Roboto Slab;
+    font-size: 16px;
+}
+
+#reason::placeholder {
+    position: absolute;
+    top: 7px;
+    left: 10px;
+}
+
+#form button
+{
+    background-color: #84DD63;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-family: Roboto Slab;
+    width: 90%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#form button:hover
+{
+    background-color: #57d829;
+    transition: 0.3s;
+}
+#form #requiredField {
+    text-align: left !important;
+    color: #B9B9B9;
+    font-family: Roboto Slab;
+    font-size: 18px;
+}

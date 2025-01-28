@@ -1,0 +1,418 @@
+/* About us page style sheet, media queries can be found at the end of the document */
+*{scroll-behavior: smooth;}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: Average Sans;
+  background-color: #f8ffad;
+}
+
+#nav2
+{
+  font-family: Roboto Slab;
+}
+
+/* scroll indicator style */
+.indicator-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #000000;
+  z-index: 1000;
+}
+.indicator
+{
+  height: 100%;
+  width: 0;
+  background-color: rgb(132, 221, 99);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: width 0.2s ease;
+  border: 1px solid #1137f2;
+  border-left: none;
+  border-right: none;
+}
+
+main
+{
+  padding-top: 100px;
+}
+.mission-section {
+  display: flex;
+  align-items: center;
+  height: 90vh;
+}
+
+/* scroll to top button */
+
+.scrollTop-btn
+{
+  display: none;
+  position: -webkit-sticky;
+  position: sticky;
+  align-self: flex-end;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  background: rgb(132, 221, 99);
+  border-radius: 50px;
+  border: 2px solid #000;
+  bottom: 30px;
+  left: 96%;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 30px;
+  transition: 0.3s ease;
+}
+
+#scrollArrow
+{
+  font-size: 40px;
+  vertical-align: top;
+  margin-top: 3px;
+}
+.scrollTop-btn:hover
+{
+  background: rgb(73, 129, 73);
+}
+
+/* mission section style */
+.mission-section, .s3
+{
+  background-color: #fefff3;
+}
+
+#s1
+{
+  height: max-content;
+}
+.mission-content {
+  flex: 1;
+  padding: 20px;
+  margin: 3px;
+  border-left: 7px solid  rgb(132,221,99);
+  margin-left: 20px;
+}
+
+.mission-content h2
+{
+  margin-bottom: 10px;
+  font-family: Roboto Slab;
+}
+.mission-image {
+  flex: 1;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.mission-image img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 60%;
+  border: 3px solid  rgb(132,221,99);
+  margin-top: 25px;
+}
+
+h2 {
+  font-size: 34px;
+  color: rgb(0, 0, 0);
+}
+
+#s1 p {
+  font-size: 16px;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgb(50, 59, 53);
+  text-align: justify;
+}
+/* staff section style */
+.s2 {
+  height: max-content;
+  background-color: #f8ffad;
+}
+
+.staff-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.s2 h1 {
+  text-align: center;
+  font-size: 34px;
+  color: rgb(0, 0, 0);
+  padding: 25px;
+}
+
+.staff-member {
+  text-align: center;
+  margin: 10px;
+  padding: 27px;
+}
+
+.staff-member img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 3px solid #82c5f9;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.staff-member p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.social-icons {
+  list-style: none;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.social-icons i {
+  background: rgb(132, 221, 99);
+  color: #fff;
+  padding: 15px;
+  border-radius: 22%;
+  margin: 0px 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+footer i
+{
+  padding: 0px !important;
+  margin: 0px 0px !important;
+  margin-right: 10px !important;
+}
+.social-icons i:hover {
+  background: #fff;
+  color: #000000;
+}
+#one{
+  padding: 3px;
+}
+#two{
+  padding: 3px;
+}
+
+.s3{
+  height: 600px;
+  padding: 5%;
+}
+/* working hours section style */
+.working-hours-section {
+  background-color: rgb(250, 247, 223);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 25px;
+  padding: 25px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-left: 7px solid rgb(132,221,99);
+  border-bottom: 7px solid  rgb(132,221,99);
+  text-align: center;
+}
+
+.working-hours {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.working-hours li {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.working-hours li:last-child {
+  border-bottom: none;
+}
+
+.day {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.hours {
+  color: #555;
+  font-size: 18px;
+}
+/* achievements section style */
+#s4 {
+  background-color: #f8ffad;
+  padding-bottom: 10px;
+}
+
+#s4 h1 {
+  text-align: center;
+  font-size: 34px;
+  color: rgb(0, 0, 0);
+  padding: 25px;
+}
+.pdf-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.pdf {
+  width: 30%;
+  box-sizing: border-box;
+  overflow: hidden;
+
+}
+
+.pdf:not(:last-child)
+{
+  margin-right: 30px;
+}
+
+.pdf img {
+  border-radius: 2px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  float: left;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pdf:hover{
+  opacity: 0.8;
+}
+
+#achievement {
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgb(50, 59, 53);
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.hidden{
+  opacity: 0;
+  transition: all 2s;
+}
+
+.show{
+  opacity: 1;
+  transition: all 2s;
+}
+
+/* media queries */
+@media (max-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+  #achievement{
+    font-size: 16px;
+  }
+  .mission-section {
+    flex-direction: column;
+    height: max-content;
+  }
+  .pdf-container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .pdf
+  {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+} 
+
+
+@media  screen and (max-width: 650px) {
+  main{
+    padding-top: 150px;
+  }
+  #one
+  {
+    font-size: 25px;
+  }
+}
+
+
+@media  screen and (max-width: 500px) {
+  main{
+    padding-top: 125px;
+  }
+
+  .staff-member .social-icons i
+  {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 308px) 
+{
+
+  main {
+    padding-top: 95px;
+  }
+  .staff-member img{
+    width: 200px;
+    height: 200px;
+  }
+  #s1
+  {
+    height: max-content;
+  }
+
+  .mission-image img {
+    max-width: 80%;
+  }
+
+  #s4 h1
+  {
+    font-size: 18px;
+  }
+  #achievement
+  {
+    font-size: 16px;
+  }
+  #nav2
+  {
+    width: 70% !important;
+  }
+}
+
+@media (max-width: 230px) 
+{
+
+  main{
+    padding-top: 80px;
+  }
+  .staff-member img{
+    width: 150px;
+    height: 150px;
+  }
+  #s1
+  {
+    height: max-content;
+  }
+
+  .mission-image img {
+    max-width: 70%;
+  }
+}
+

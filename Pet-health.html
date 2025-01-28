@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="What should I do if my pet is overweight? If your pet is overweight, it's important to consult with our veterinarians to create a weight management plan. This may include a balanced diet and increased exercise to help your pet achieve and maintain a healthy weight.">
+    <meta name="keywords"
+        content="question, answer, why, how, when, pet, health, dental, surgery, care, protect, fleas">
+    <title>Fauna Animal Hospital - Pet Health</title>
+    <link rel="icon" type="png" href="photos/icon.png">
+    <link rel="stylesheet" href="Pet-health.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="subMenu.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Baloo+Bhaina+2:wght@700&family=Roboto+Slab"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Average+Sans&family=Baloo+Bhaina+2:wght@700&family=Roboto+Slab"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="header.js" defer></script>
+</head>
+
+<body>
+
+    <!--SCROLL INDICATOR-->
+    <div class="indicator-container">
+        <div class="indicator"></div>
+    </div>
+    <header>
+
+        <!--LOGO-->
+        <div id="logo">
+            <a href="index.html"><img src="photos/Logo.png" alt="logo"></a>
+        </div>
+
+        <!-- NAVIGATION BAR-->
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="About-Us.html" id="about-menu">About Us <i class="material-icons"
+                            id="dropdown-icon">&#xe5cf;</i></a>
+                    <ul class="dropdown aboutDropdown">
+                        <li><a href="About-Us.html#s1">Our Mission</a></li>
+                        <li><a href="About-Us.html#s2">Our Staff</a></li>
+                        <li><a href="About-Us.html#s3">Working Hours</a></li>
+                        <li><a href="About-Us.html#s4">Our Achievements</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="services.html">Services</a>
+                </li>
+                <li>
+                    <a href="Pet-gallery.html">Pet Gallery</a>
+                </li>
+                <li>
+                    <a href="Pet-health.html">Pet Health</a>
+                </li>
+                <li>
+                    <a href="contactUs.html" id="contact-menu">Contact Us <i class="material-icons"
+                            id="dropdown-icon">&#xe5cf;</i></a></a>
+                    <ul class="dropdown contactDropdown">
+                        <li><a href="contactUs.html">Make an appointment</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="menu-container">
+
+            <!--HAMBURGER MENU ICON-->
+            <input hidden="" class="check-icon" id="check-icon" name="check-icon" type="checkbox">
+            <label class="icon-menu" for="check-icon">
+                <div class="bar bar--1"></div>
+                <div class="bar bar--2"></div>
+                <div class="bar bar--3"></div>
+            </label>
+
+            <!-- DROPDOWN NAV BAR -->
+            <div id="nav2">
+                <ul id="hamburger-menu">
+                    <li> <a href="index.html">Home</a> </li>
+                    <li>
+                        <a href="About-Us.html" class="main-link-to-page">About Us</a>
+                        <ul class="sub-menu">
+                            <li><a href="About-Us.html#s1">Our Mission</a></li>
+                            <li><a href="About-Us.html#s2">Our Staff</a></li>
+                            <li><a href="About-Us.html#s3">Working Hours</a></li>
+                            <li><a href="About-Us.html#s4">Our Achievements</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="services.html">Services</a> </li>
+                    <li> <a href="Pet-gallery.html">Pet Gallery</a> </li>
+                    <li> <a href="Pet-health.html">Pet Health</a> </li>
+                    <li>
+                        <a href="contactUs.html" class="main-link-to-page">Contact Us</a>
+                        <ul class="sub-menu">
+                            <li><a href="contactUs.html">Make an appointment</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--SEARCH BAR-->
+        <div class="searchBox">
+            <div class="searchToggle">
+                <i class='bx bx-x cancel'></i>
+                <i class='bx bx-search'></i>
+            </div>
+
+            <div class="search-field">
+                <input type="text" placeholder="Search...">
+                <i class='bx bx-search'></i>
+            </div>
+        </div>
+    </header>
+    <!-- PAGE DESCRIPTION -->
+    <div id="petheader">
+        <h1>Pet Health Tips</h1>
+        <p>In this page, we gathered the frequently asked questions by our clients and posted answers given by our best
+            doctors! If you don't find an answer to your question, please send it by filling the <a
+                href="#questform">question form</a> below. We look forward to hearing your questions!</p>
+    </div>
+    <!-- FAQ LIST -->
+    <main id="FAQcontainer">
+        <ul id="FAQlist"></ul>
+    </main>
+    <!-- QUESTION FORM -->
+    <div class="question-container" id="questform">
+        <div class="question-form">
+            <h1>Ask Us</h1>
+            <span class="alert"></span>
+            <div class="form-field">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email..." required>
+            </div>
+            <div class="form-field">
+                <label for="question">Question: </label>
+                <input type="text" id="question" placeholder="Enter your question..." required>
+            </div>
+            <div class="form-field">
+                <button type="submit">Submit</button>
+            </div>
+            <div class="form-field">
+                <a href="#FAQlist">Browse other questions</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="pop">
+        <img src="photos/check.png">
+        <h1>Thank You!</h1>
+        <p>Your question was submitted successfully.</p>
+        <button class="ok">OK</button>
+    </div>
+
+    <a href="#" class="scrollTop-btn"><i class="material-icons" id="scrollArrow">&#xe5d8;</i> </a>
+    <footer>
+
+        <!--FOOTER INFO-->
+        <div id="icon-contact">
+            <div><img src="photos/icon.png" alt="icon"></div>
+            <div id="contactFooter">
+                <p><b>Phone: </b>+ 1235 2355 98</p>
+                <p><b>Email: </b> info@Fauna.com</p>
+            </div>
+        </div>
+
+        <!--SOCIAL ICONS - COPYRIGHT-->
+        <div id="icon-copyright">
+            <ul class="social-icons">
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                </li>
+                <li><a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+            <p id="copyright">&copy; Fauna Animal Hospital</p>
+        </div>
+
+    </footer>
+    <script src="Pet-health.js"></script>
+</body>
+
+</html>

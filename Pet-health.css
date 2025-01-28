@@ -1,0 +1,264 @@
+/* pet gallery page style sheet, media queries can be found at the end of the document */
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+
+}
+body
+{  
+  background-color: #fefff3;
+}
+main{
+  display: flex;
+  justify-content: center;
+}
+
+.indicator-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #000000;
+  z-index: 1000;
+}
+.indicator
+{
+  height: 100%;
+  width: 0;
+  background-color: rgb(132, 221, 99);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: width 0.2s ease;
+  border: 1px solid #1137f2;
+  border-left: none;
+  border-right: none;
+}
+
+/* scroll to top button */
+
+.scrollTop-btn
+{
+  display: none;
+  position: -webkit-sticky;
+  position: sticky;
+  align-self: flex-end;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  background: rgb(132, 221, 99);
+  border-radius: 50px;
+  border: 2px solid #000;
+  bottom: 30px;
+  left: 96%;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 30px;
+  transition: 0.3s ease;
+}
+
+#scrollArrow
+{
+    font-size: 40px;
+    vertical-align: top;
+    margin-top: 3px;
+}
+.scrollTop-btn:hover
+{
+    background: rgb(73, 129, 73);
+}
+
+/* PAGE DESCRIPTION */
+#petheader{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  padding-top: 170px;
+  font-family: Roboto Slab;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* FAQ LIST */
+#FAQlist{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  width: 90%;
+  background-color: #fff;
+  /* margin-left: 10px;
+  margin-right: 20px; */
+}
+
+.item.opened {
+  background: #bedaef;
+  transition: background-color 0.3s ease;
+}
+  
+.item{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid grey;
+  position: relative; 
+  border-radius: 7px;
+}
+
+.q{
+  font-weight: bold;
+}
+.material-symbols-outlined {
+font-variation-settings:
+'FILL' 0,
+'wght' 400,
+'GRAD' 0,
+'opsz' 24
+}
+
+.material-symbols-outlined{
+  position: absolute;
+  right: 20px;
+}
+
+.material-symbols-outlined:hover{
+  cursor: pointer;
+}
+
+
+/* ADD QUESTION FORM */
+.question-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  margin-top: 20px;
+  height: 80vh; 
+}
+
+.question-form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: #fff;
+  padding: 40px; 
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px; 
+  background-image: linear-gradient( rgb(29,73,153), #82c5f9);
+}
+
+.question-form h1{
+  color: #4c78af;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 50px;
+  padding: 20px;
+  font-family: Roboto Slab;
+}
+
+.form-field {
+  margin-bottom: 15px;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Average Sans;
+  color: #fff;
+}
+
+.form-field input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: none;
+}
+
+.form-field button {
+  background: #4c78af;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  border: 2px solid #4c78af;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 130px;
+  font-family: Roboto Slab;
+  font-size: 18px;
+}
+
+.form-field button:hover{
+  background-color: #fff;
+  color: #4c78af;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* POPUP MESSAGE */
+
+.pop img{
+width: 50px;
+}
+
+.pop {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center; 
+padding: 20px;
+gap: 10px;
+width: 500px;
+border: 2px solid grey;
+border-radius: 6px;
+box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.1);
+z-index: 2;
+position: fixed; 
+top: 50%;
+left: 50%; 
+transform: translate(-50%, -50%); 
+background-color: #fff;
+}
+
+.ok{
+margin-top: 20px;
+width: 50px;
+padding: 6px 5px;
+border: 2px solid rgb(132, 221, 99);
+border-radius: 5px;
+color: rgb(132, 221, 99);
+font-weight: bold;
+
+}
+
+@media screen and (max-width: 500px)
+{
+  #petheader h1 {
+    font-size: 18px;
+  }
+  .pop
+  {
+    width: 300px;
+  }
+
+  .question-form
+  {
+    width: 300px;
+  }
+}

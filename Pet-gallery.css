@@ -1,0 +1,333 @@
+/* pet gallery page style sheet, media queries can be found at the end of the document */
+html{scroll-behavior: smooth;}
+
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* :focus
+{
+    outline: none;
+}
+
+.indicator-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #000000;
+    z-index: 1000;
+}
+.indicator
+{
+    height: 100%;
+    width: 0;
+    /* background-color: #0df575; */
+    background-color: rgb(132, 221, 99);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: width 0.2s ease;
+    border: 1px solid #1137f2;
+    border-left: none;
+    border-right: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #82c5f9;
+    padding-top: 170px;
+}
+
+
+/* welcome message style */
+#welcome-msg
+{
+    color: #000;
+    margin: 70px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+    /* margin-top: 15%; */
+    font-family: Roboto Slab, Average Sans;
+}
+
+#welcome-msg a{
+    font-size: 20px;
+}
+/* start of photo styling */
+.photo-container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4%;
+    padding-top: 1%;
+}
+
+.card
+{
+    position: relative;
+    background: #f8ffad;
+    padding: 15px;
+    padding-bottom: 15px;
+    margin: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.imgbox
+{
+    cursor: pointer;
+}
+
+.imgbox img{
+
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.imgbox img:hover
+{
+    cursor: pointer;
+}
+
+.petName
+{
+    font-family: Pacifico, Average Sans;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.image{
+    transition: 1s;
+}
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    margin-left: 14px;
+    margin-top: 14px;
+    transition: opacity 0.4s ease-in-out;
+    background: black;
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+}
+
+.content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: Roboto Slab;
+    font-size: 14px;
+}
+
+.imgbox:hover .overlay{
+    opacity: 0.7;
+}
+/* end of photo styling */
+
+/* scroll to top button */
+
+.scrollTop-btn
+{
+    display: none;
+    position: -webkit-sticky;
+    position: sticky;
+    align-self: flex-end;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    background: rgb(132, 221, 99);
+    border-radius: 50px;
+    border: 2px solid #000;
+    bottom: 30px;
+    right: 20px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 30px;
+    transition: 0.3s ease;
+}
+
+#scrollArrow
+{
+    font-size: 40px;
+    vertical-align: top;
+    margin-top: 3px;
+}
+.scrollTop-btn:hover
+{
+    background: rgb(73, 129, 73);
+}
+
+/* popup image */
+.popup-image
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    display: none;
+
+}
+
+.popup-image span
+{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.popup-image span:hover
+{
+    color: rgb(132, 221, 99);
+    transition: 0.3s;
+}
+.popup-image img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 550px;
+    height: auto;
+    object-fit: cover;
+    rotate: none;
+    opacity: 1;
+
+
+}
+
+
+.popup-image button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+    font-size: 20px;
+    transition: 0.4s;
+    border-radius: 5px;
+    border: none;
+}
+
+.popup-image #prev {
+    left: 200px;
+}
+
+.popup-image #next {
+    right: 200px;
+}
+
+.popup-image button:hover {
+    background-color: rgba(132, 221, 99, 0.8);
+}
+
+
+.description
+{
+    display: none;
+    color: #fff;
+    font-size: 18px;
+    font-family: Roboto Slab;
+    text-align: center;
+    margin-top: 90px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* media queries */
+@media screen and (max-width: 1050px)
+{
+    .popup-image #prev {
+        left: 100px;
+    }
+    
+    .popup-image #next {
+        right: 100px;
+    }
+}
+@media (max-width:768px)
+{
+    .popup-image img
+    {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 760px)
+{
+    .popup-image #prev {
+        left: 10px;
+    }
+    
+    .popup-image #next {
+        right: 10px;
+    }
+}
+@media screen and (max-width: 500px)
+{
+    .description
+    {
+        margin-top: 70px;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+    .description
+    {
+        margin-top: 90px;
+        display: block;
+    }
+
+    .overlay
+    {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 300px)
+{
+    .description
+    {
+        margin-top: 110px;
+    }
+}
+

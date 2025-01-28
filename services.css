@@ -1,0 +1,306 @@
+/* services  page style sheet, media queries can be found at the end of the document */
+*
+{
+  padding: 0;
+  margin: 0;
+}
+
+.indicator-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #000000;
+  z-index: 1000;
+}
+.indicator
+{
+  height: 100%;
+  width: 0;
+  /* background-color: #0df575; */
+  background-color: rgb(132, 221, 99);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: width 0.2s ease;
+  border: 1px solid #1137f2;
+  border-left: none;
+  border-right: none;
+}
+
+
+/* SERVICES STYLING */
+#services
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.servitem
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 500px;
+  justify-content: center;
+  position: relative;
+}
+
+.servitem:nth-child(even)
+{
+  flex-direction: row-reverse;
+  background-color: #fefff3;
+}
+
+.servitem:nth-child(odd)
+{
+  background-color: #f8ffad;
+}
+
+.servitem:nth-child(odd) .imgcont
+{
+  padding-right: 60px;
+}
+
+.servitem:nth-child(even) .imgcont
+{
+  padding-left: 60px;
+}
+
+.subitm{
+  padding: 10%;
+  width: 80%;
+}
+
+.description{
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: Average Sans;
+}
+
+.name
+{
+  margin-bottom: 20px;
+  font-family: Roboto Slab;
+}
+
+.imgcont{
+  justify-content: center;
+  max-width: 40%;
+  max-height: auto;
+}
+
+.imgcont img
+{
+  width: 100%;
+  height: 100%;
+}
+.services-top
+{
+  padding-top: 250px;
+  padding-bottom: 100px;
+  font-family: Roboto Slab;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+  background-color: #fefff3;
+  height: fit-content;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+#services-intro{
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+#services-description
+{
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.services-top img
+{
+  position: absolute;
+  opacity: 0.05;
+  top: 150px;
+}
+
+
+.icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  opacity: 0.07;
+  width: 300px;
+}
+
+.servitem:nth-child(even) .icon{
+  right: 0;
+  padding: 20px;
+}
+
+.servitem:nth-child(odd) .icon{
+  left: 0;
+  padding: 20px;
+}
+
+.hidden{
+opacity: 0;
+transition: all 2s;
+}
+
+.show{
+opacity: 1;
+transition: all 2s;
+}
+
+
+ /* MEDIA QUERIES */
+@media screen and (max-width: 1200px)
+{
+  .services-top img
+  {
+    width: 60%;
+    right: 50px;
+    top: 200px;
+  }
+}
+@media screen and (max-width: 940px)
+{
+  .servitem
+  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+  }
+
+  .servitem:nth-child(even)
+  {
+    flex-direction: column;
+  }
+  .servitem:nth-child(odd) .imgcont
+  {
+    padding-right: 0;
+  }
+
+  .servitem:nth-child(even) .imgcont
+  {
+    padding-left: 0;
+  }
+      
+  .imgcont{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .imgcont img
+  {
+    width: 500px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 768px)
+{
+  .servitem
+  {
+    padding-bottom: 20px;
+  }
+  #services-intro{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }  
+  #services-description
+  {
+    font-size: 15px;
+  }
+  .services-top img
+  {
+    width: 70%;
+    right: 50px;
+    top: 200px;
+  }
+  .name
+  {
+    font-size: 25px;
+  }
+
+  
+  .imgcont img
+  {
+    width: 400px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 568px)
+{
+  .services-top
+  {
+    height: max-content;
+  }
+  #services-intro{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }  
+  #services-description
+  {
+    font-size: 15px;
+  }
+
+  .servitem
+  {
+    align-items: center;
+  }
+
+  .services-top img
+  {
+    width: 70%;
+    right: 50px;
+    top: 450px;
+  }
+  .subitm{
+    padding: 5%;
+    width: 90%;
+  }
+
+
+  .imgcont img
+  {
+    width: 300px;
+    height: auto;
+  }
+
+  .icon{
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 368px)
+{
+  
+  .imgcont{
+    justify-content: center;
+    max-width: 70%;
+    max-height: auto;
+  }
+  
+  .imgcont img
+  {
+    width: 100%;
+    height: 100%;
+  }
+
+  .icon{
+    width: 150px;
+  }
+}
